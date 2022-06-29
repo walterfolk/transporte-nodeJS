@@ -1,0 +1,305 @@
+/* font-family: 'Open Sans', sans-serif; */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+header {
+    background-color: #2e64a1;
+    padding: 16px 0;
+}
+
+
+header h1 {
+    color: white;
+    font-size: 40px;
+    font-weight: 100;
+    font-style: italic;
+    display: inline-block;
+    position: relative;
+    bottom: 35px;
+    margin-left: 10px;
+}
+
+nav {
+    background-color: #6da9ed;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+}
+
+nav ul li {
+    /* display: block; */
+    flex-grow: 1;
+    /* La propiedad flex-grow de CSS especifica el factor de crecimiento de un elemento flexible (que tiene asignado display:flex), en su dirección principal. El factor de crecimiento especifica qué cantidad del espacio restante dentro del contenedor flexible, debería ocupar el item en cuestión. */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 3px 6px;
+    display: block;
+    text-align: center;
+
+}
+
+nav ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+footer {
+    background-color: #ccc;
+    clear: both;
+    color: #444;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 20px;
+}
+
+nav ul li a.active {
+    background-color: #4c76a5;
+}
+
+.activo {
+    background-color: #4c76a5;
+} 
+
+.holder {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+
+h2 {
+    color: #2e64a1;
+    font-weight: 400;
+}
+
+/* inicio home */
+
+.bienvenidos {
+    width: 75%;
+    padding-right: 10px;
+    box-sizing: border-box;
+}
+
+.testimonios {
+    width: 25%;
+}
+
+.columnas {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bienvenidos p {
+    font-size: 20px;
+}
+
+.testimonio {
+    background-color: #ccc;
+    padding: 20px;
+}
+
+.testimonio .cita {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 22px;
+    display: block;
+}
+
+.testimonio .autor {
+    font-size: 10px;
+    text-align: center;
+    display: block;
+    margin: 12px 0;
+}
+
+/* fin home */
+
+/* inicio nosotros */
+.historia p {
+    font-size: 1rem;
+}
+
+.persona img {
+    max-width: 70%;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+    /* display: block;
+    margin: 0px auto; */
+}
+
+.persona {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    width: 18%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* .persona:hover {
+    border: 3px solid rgb(28, 40, 44);
+
+} */
+
+.personas {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.persona h5,
+.persona h6 {
+    color: #2e64a1;
+    font-weight: normal;
+    margin: 0;
+}
+
+.persona h5 {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.persona h6 {
+    font-size: 12px;
+    font-style: italic;
+
+}
+
+.persona p {
+    text-align: left;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+/* fin nosotros */
+
+/* inicio servicios */
+.servicio {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 16px;
+    margin: 16px 0;
+    display: flex;
+    /* box-sizing: border-box; */
+    gap: 32px;
+    align-items: center;
+
+}
+
+.servicio .info h4 {
+    color: #2e64a1;
+    font-weight: normal;
+    font-style: italic;
+    border-bottom: 1px solid #2e64a1;
+    padding-bottom: 10px;
+}
+
+.servicio .info p {
+    font-size: 13px;
+}
+
+.servicio img {
+    border-radius: 5%;
+    display: block;
+    max-width: 225px;
+}
+
+.servicio:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+/* fin servicios */
+
+/* inicio galeria */
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.galeria img {
+    max-width: 15%;
+    border: 1px solid #ccc;
+    margin: 0 10px 10px 0;
+    padding: 5px;
+}
+
+.galeria img:hover {
+    background-color: aqua;
+    border-color: aqua;
+}
+
+.galeria img:nth-child(5n+1) {
+    border: 1px solid red;
+}
+
+/* fin galeria */
+
+/* inicio contacto */
+.contacto {
+    display: flex;
+    justify-content: space-around;
+}
+.datos {
+    /* display: flex; */
+    gap: 24px;
+    justify-content: space-between;
+}
+
+.contacto p,
+.contacto ul li {
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.formulario p {
+    display: flex;
+}
+
+.formulario p label {
+    min-width: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.formulario p input,
+.formulario p textarea {
+    width: 20rem;
+    display: flex;
+    background-color: #ddd;
+    border: 1px solid #999;
+    border-radius: 5px;
+    padding: 6px 10px;
+}
+.formulario p textarea {
+    height: 150px;
+    resize: none;
+}
+
+.formulario input[type="submit"] {
+    background-color: #6da9ed;
+    border-radius: 3px;
+    width: auto;
+    color: white;
+    padding: 6px 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+
+.formulario input[type="submit"]:hover{
+    background-color: #2e64a1;
+}
+
+/* fin contacto */
