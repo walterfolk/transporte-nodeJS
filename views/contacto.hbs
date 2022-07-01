@@ -1,7 +1,7 @@
 <div class="contacto">
     <div>
         <h2>Contacto Rapido</h2>
-        <form action="" class="formulario">
+        <form action="/contacto" method="post" class="formulario">
             <p>
                 <label for="nombre">Nombre</label>
                 <input type="text" id="nombre" name="nombre" placeholder="Nombre" />
@@ -15,14 +15,15 @@
                 <input type="text" id="telefono" name="telefono" placeholder="Telefono" />
             </p>
             <p>
-                <label for="mensajes">Mensajes</label>
-                <textarea name="mensajes" id="mensajes" cols="30" rows="10"
+                <label for="comentario">Mensajes</label>
+                <textarea name="comentario" id="comentario" cols="30" rows="10"
                     placeholder="Dejenos aqui su mensaje"></textarea>
             </p>
             <p><label for="enviar"></label>
                 <input type="submit" id="enviar">
             </p>
         </form>
+            <h4>{{message}}</h4>
     </div>
     <div class="datos">
         <h2>Otras vias de contacto</h2>
