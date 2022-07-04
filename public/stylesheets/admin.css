@@ -1,0 +1,24 @@
+header {
+    text-align: center;
+}
+
+header h1 {
+    bottom: 0;
+}
+
+/* inicio login */
+
+/* .login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.login input {
+  margin: 10px 0 5px 0;
+ 
+} */
+
+/* fin login */
