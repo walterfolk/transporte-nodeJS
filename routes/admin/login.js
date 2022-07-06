@@ -7,5 +7,18 @@ router.get('/', function(req,res,next){
     });
 })
 
+router.post('/', function (req,res,next){
+    
+    try{
+        console.log(req.body);
+
+
+
+    }catch(error){
+        console.log(error)
+    }
+
+
+})
 
 module.exports = router;
