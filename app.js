@@ -31,7 +31,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(session({
   secret: 'aqorewu57953tpsao235367aslfsdf',
-  cookie:{MaxAge:null}, //tiempo maximo de inactividad de la sesion
+ // cookie:{MaxAge:null}, //tiempo maximo de inactividad de la sesion
   resave: false, //
   saveUninitialized: true
 }))
