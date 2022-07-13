@@ -12,4 +12,14 @@ router.get('/', async function(req,res,next){
     });
 })
 
+
+// => o function
+// esto sirve para mostrar from el alta las novedades
+router.get('/agregar',(req,res,next) =>{
+        res.render('admin/agregar',{
+            layout: 'admin/layout'
+        })
+
+})
+
 module.exports = router; 
